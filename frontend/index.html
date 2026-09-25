@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản Lý Khách Sạn — Portal nhân viên</title>
+  <!-- Font khai báo trong variables.css (--font-sans: Inter). Offline vẫn chạy với system-ui fallback. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap">
+  <!-- Đường dẫn tương đối để SPA chạy dưới tiền tố /portal/ -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/pages.css">
+  <link rel="stylesheet" href="./css/portal.css">
+  <link rel="stylesheet" href="./css/guestLookup.css">
+  <link rel="stylesheet" href="./css/chat.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+  <div id="app">
+    <div id="app-loader" class="app-loader">
+      <div class="spinner"></div>
+      <p>Đang tải...</p>
+    </div>
+  </div>
+  <div id="toast-container" class="toast-container"></div>
+  <div id="modal-container" class="modal-container"></div>
+  <script type="module" src="./js/app.js?v=20260919"></script>
+</body>
+</html>

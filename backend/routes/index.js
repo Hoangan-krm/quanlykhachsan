@@ -1,0 +1,42 @@
+import { Router } from 'express';
+import authRoutes from './authRoutes.js';
+import bookingRoutes from './bookingRoutes.js';
+import customerRoutes from './customerRoutes.js';
+import invoiceRoutes from './invoiceRoutes.js';
+import paymentRoutes from './paymentRoutes.js';
+import roomRoutes from './roomRoutes.js';
+import roomTypeRoutes from './roomTypeRoutes.js';
+import serviceRoutes from './serviceRoutes.js';
+import staffRoutes from './staffRoutes.js';
+import reportRoutes from './reportRoutes.js';
+import dashboardRoutes from './dashboardRoutes.js';
+import shiftRoutes from './shiftRoutes.js';
+import reviewRoutes from './reviewRoutes.js';
+import auditRoutes from './auditRoutes.js';
+import configRoutes from './configRoutes.js';
+import promoRoutes from './promoRoutes.js';
+import chatRoutes from './chatRoutes.js';
+import backupRoutes from './backupRoutes.js';
+
+const router = Router();
+
+router.use('/auth', authRoutes);
+router.use('/bookings', bookingRoutes);
+router.use('/customers', customerRoutes);
+router.use('/invoices', invoiceRoutes);
+router.use('/payments', paymentRoutes);
+router.use('/rooms', roomRoutes);
+router.use('/room-types', roomTypeRoutes);
+router.use('/services', serviceRoutes);
+router.use('/staff', staffRoutes);
+router.use('/reports', reportRoutes);
+router.use('/dashboard', dashboardRoutes);
+router.use('/shifts', shiftRoutes);
+router.use('/reviews', reviewRoutes);
+router.use('/audit', auditRoutes);
+router.use('/config', configRoutes);
+router.use('/promos', promoRoutes);
+router.use('/chat', chatRoutes);
+router.use('/backup', backupRoutes);
+
+export default router;
